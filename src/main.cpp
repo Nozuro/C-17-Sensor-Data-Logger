@@ -3,8 +3,13 @@
 #include <thread>
 #include "SensorSimulator.h"
 #include "Logger.h"
+#include "../experiments/phase1/queue_demo.cpp";
+
 
 int main() {
+	run_queue_demo();
+	return 0;
+
 	SensorSimulator sensor(20.0, 30.0);
 	Logger logger("data.csv");
 
